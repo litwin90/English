@@ -1,0 +1,12 @@
+@import '../../theme/core-variables.scss';
+
+.item {
+    display: flex;
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}

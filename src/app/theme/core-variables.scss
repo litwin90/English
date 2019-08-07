@@ -15,6 +15,16 @@ $base-font-size: 16px;
     padding: px-to-rem(8px) px-to-rem(16px);
 }
 
+@mixin href {
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@mixin paddingsMin {
+    padding: px-to-rem(5px) px-to-rem(12px);
+}
+
 @mixin container {
     @include basePaddings();
 }
@@ -27,10 +37,48 @@ $base-font-size: 16px;
     @include baseFont();
     @include basePaddings();
 
+    border-radius: px-to-rem(3px);
     cursor: pointer;
     outline: none;
 }
 
+@mixin baseShadow {
+    -webkit-box-shadow: px-to-rem(-2px) px-to-rem(2px) px-to-rem(9px) px-to-rem(4px) rgba(156, 144, 156, .44);
+    -moz-box-shadow: px-to-rem(-2px) px-to-rem(2px) px-to-rem(9px) px-to-rem(4px) rgba(156, 144, 156, .44);
+    box-shadow: px-to-rem(-2px) px-to-rem(2px) px-to-rem(9px) px-to-rem(4px) rgba(156, 144, 156, .44);
+}
+
+@mixin slide-right {
+    -webkit-transition-property: -webkit-transform, width;
+    -moz-transition-property: -moz-transform, width;
+    transition-property: transform, width;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+@mixin show {
+    -webkit-transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    transition: display 1s ease-in-out;
+}
+
+$black: black;
 $dark: #414452;
+$dark-hovered: #545663;
+$green: green;
+$light-green: palegreen;
+$yellow-green: yellowgreen;
+$yellow-green-hover: #8ab82d;
 $grey: gray;
+$light-grey: lightgrey;
 $white: white;
+$whitesmoke: whitesmoke;
+$medium-turquoise: mediumturquoise;
+$medium-turquoise-hovered: #40bcb7;
+$blue: blue;
+$light-blue: lightblue;
+$light-font-color: white;

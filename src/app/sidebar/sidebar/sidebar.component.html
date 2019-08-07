@@ -1,0 +1,42 @@
+<div
+    class="wrapper"
+    (mouseover)="toggleItems()"
+    (mouseleave)="toggleItems()"
+>
+    <app-sidebar-item class="item">
+        <div icon>
+            <img src="../../../assets/icon.png" alt="Home" class="logo">
+        </div>
+        <div text>
+            <img src="../../../assets/slogan.png" alt="Anglo Mammy" class="slogan">
+        </div>
+    </app-sidebar-item>
+
+    <app-sidebar-item class="item">
+        <div icon class="icon">
+            <fa-icon [icon]="['fas', 'home']"></fa-icon>
+        </div>
+        <span text class="item-text">At Home</span>
+    </app-sidebar-item>
+
+    <app-sidebar-item class="item">
+        <div icon class="icon">
+            <fa-icon [icon]="['fas', 'walking']"></fa-icon>
+        </div>
+        <span text class="item-text">At Walking</span>
+    </app-sidebar-item>
+
+    <app-sidebar-item class="item">
+        <div icon class="icon">
+            <fa-icon [icon]="['fas', 'puzzle-piece']"></fa-icon>
+        </div>
+        <span text class="item-text">During Games</span>
+    </app-sidebar-item>
+
+    <app-sidebar-item class="item">
+        <div icon class="icon">
+            <fa-icon [icon]="['fas', 'birthday-cake']"></fa-icon>
+        </div>
+        <span text class="item-text">On Holidays</span>
+    </app-sidebar-item>
+</div>
