@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IconsModule } from './icons/icons.module';
+import { IconsModule } from './app-common/icons/icons.module';
 
 @NgModule({
     declarations: [AppComponent],
