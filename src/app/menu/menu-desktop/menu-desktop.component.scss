@@ -1,0 +1,19 @@
+@import '../../theme/core-variables.scss';
+
+.aside {
+    @include change-width(.3s);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: px-to-rem(50px);
+    height: 100vh;
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+        @include change-width(.3s);
+
+        width: px-to-rem(250px);
+    }
+}

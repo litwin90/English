@@ -1,0 +1,19 @@
+@import '../../theme/core-variables.scss';
+
+.header {
+    @include slide-position;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: px-to-rem(50px);
+    background-color: $primary;
+    color: $white;
+
+    &.hidden {
+        @include slide-position;
+
+        top: px-to-rem(-50px);
+    }
+}

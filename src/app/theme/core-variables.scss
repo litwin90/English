@@ -48,13 +48,25 @@ $base-font-size: 16px;
     box-shadow: px-to-rem(-2px) px-to-rem(2px) px-to-rem(9px) px-to-rem(4px) rgba(156, 144, 156, .44);
 }
 
-@mixin slide-right {
+@mixin change-width($duration: .3s) {
     -webkit-transition-property: -webkit-transform, width;
     -moz-transition-property: -moz-transform, width;
     transition-property: transform, width;
-    -webkit-transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    transition-duration: .2s;
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    transition-duration: $duration;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+@mixin slide-position($duration: .3s) {
+    -webkit-transition-property: -webkit-transform, top;
+    -moz-transition-property: -moz-transform, top;
+    transition-property: transform, top;
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    transition-duration: $duration;
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
@@ -67,18 +79,16 @@ $base-font-size: 16px;
 }
 
 $black: black;
-$dark: #414452;
-$dark-hovered: #545663;
-$green: green;
-$light-green: palegreen;
-$yellow-green: yellowgreen;
-$yellow-green-hover: #8ab82d;
-$grey: gray;
-$light-grey: lightgrey;
 $white: white;
-$whitesmoke: whitesmoke;
-$medium-turquoise: mediumturquoise;
-$medium-turquoise-hovered: #40bcb7;
-$blue: blue;
-$light-blue: lightblue;
-$light-font-color: white;
+
+$primary: #a732e1;
+$primary-hover: #8500c7;
+$primary-touch: #6f00a7;
+
+$secondary: #d692f8;
+$secondary-hover: #d692f8;
+$secondary-touch: #c663f9;
+
+$action: #7147ff;
+$action-hover: #612fec;
+$action-touch: #5e1dfb;
