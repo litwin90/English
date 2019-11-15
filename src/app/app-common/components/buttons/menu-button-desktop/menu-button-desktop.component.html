@@ -1,0 +1,11 @@
+<div class="button-desktop">
+    <fa-icon
+        *ngIf="icon"
+        class="icon"
+        [icon]="['fas', icon]"
+        [fixedWidth]="true"
+        size="2x"
+    ></fa-icon>
+    <div class="text">{{ text }}</div>
+    <ng-content></ng-content>
+</div>

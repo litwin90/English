@@ -1,0 +1,25 @@
+@import "../../../../theme/core-variables.scss";
+
+.button-desktop {
+    display: flex;
+    cursor: pointer;
+    padding: px-to-rem(8px) px-to-rem(6px);
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        @include primary-large-font;
+
+        display: flex;
+        align-items: flex-end;
+        white-space: nowrap;
+        padding-left: px-to-rem(6px);
+    }
+}

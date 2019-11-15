@@ -10,10 +10,17 @@
     height: 100vh;
     background-color: $primary;
     color: $white;
+    overflow: hidden;
 
     &:hover {
         @include change-width(.3s);
 
         width: px-to-rem(250px);
+    }
+
+    .slogan {
+        position: absolute;
+        left: px-to-rem(50px);
+        top: px-to-rem(21px);
     }
 }

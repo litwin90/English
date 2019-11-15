@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'joker';
+    src: url('/src/assets/fonts/Jokerman-Regular.ttf') format();
+}
+
 $base-font-size: 16px;
 
 @mixin shadow($shadow) {
@@ -92,3 +97,12 @@ $secondary-touch: #c663f9;
 $action: #7147ff;
 $action-hover: #612fec;
 $action-touch: #5e1dfb;
+
+// fonts:
+$font-large: px-to-rem(20px);
+
+@mixin primary-large-font {
+    font-family: 'PT Sans', sans-serif;
+    font-size: $font-large;
+    font-weight: bold;
+}

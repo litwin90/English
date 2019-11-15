@@ -1,5 +1,23 @@
 <aside
     class="aside"
 >
-
+    <app-menu-button-desktop>
+        <app-logo
+            [width]="38"
+            [height]="40"
+        ></app-logo>
+        <img
+            src="../../../assets/slogan-white.svg"
+            alt="Anglo Mammy"
+            class="slogan"
+        >
+    </app-menu-button-desktop>
+    <ng-container
+        *ngFor="let menuItem of MenuItems"
+    >
+        <app-menu-button-desktop
+            [icon]="menuItem.icon"
+            [text]="menuItem.text"
+        ></app-menu-button-desktop>
+    </ng-container>
 </aside>
