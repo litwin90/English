@@ -13,7 +13,6 @@
     "prettier.useTabs": false,
     "prettier.tabWidth": 4,
     "prettier.printWidth": 120,
-    "prettier.stylelintIntegration": true,
     "[typescript]": {
         "editor.formatOnSave": true
     },
