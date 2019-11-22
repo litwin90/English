@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { WindowResolution } from '../../app-common/constants';
+import { WindowResolution } from '../../configs/constants';
 
 @Injectable({
     providedIn: 'root',

@@ -1,3 +1,5 @@
+@import '../../assets/fonts/fonst.scss';
+
 @font-face {
     font-family: 'joker';
     src: url('/src/assets/fonts/Jokerman-Regular.ttf') format();
@@ -84,7 +86,7 @@ $base-font-size: 16px;
 }
 
 $black: black;
-$white: white;
+$white: #f5f5f5;
 
 $primary: #a732e1;
 $primary-hover: #8500c7;
@@ -98,11 +100,17 @@ $action: #7147ff;
 $action-hover: #612fec;
 $action-touch: #5e1dfb;
 
+$negative: #e13256;
+$negative-touch: #c40007;
+
+$light-grey: #e9e9e9;
+
 // fonts:
-$font-large: px-to-rem(20px);
+$font-large: px-to-rem(22px);
 
 @mixin primary-large-font {
-    font-family: 'PT Sans', sans-serif;
+    font-family: $joker-font;
     font-size: $font-large;
-    font-weight: bold;
 }
+
+$joker-font: joker, 'PT Sans', sans-serif;

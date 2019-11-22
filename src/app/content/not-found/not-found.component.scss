@@ -1,0 +1,23 @@
+@import '../../theme/buttons.scss';
+
+:host {
+    @include primary-large-font;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: $negative;
+    font-size: px-to-rem(30px);
+}
+
+.error {
+    font-size: px-to-rem(100px);
+    font-weight: bold;
+}
+
+.return {
+    margin-top: px-to-rem(100px);
+}

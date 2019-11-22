@@ -1,0 +1,6 @@
+@import './core-variables.scss';
+
+$menu-width-collapsed: px-to-rem(50px);
+$menu-width-expanded: px-to-rem(250px);
+
+$content-base-left-margin: $menu-width-collapsed + px-to-rem(20px);

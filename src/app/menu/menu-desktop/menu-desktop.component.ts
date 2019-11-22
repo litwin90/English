@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { MenuItems } from '../menu.models';
+
+import { AppRoutes } from '../../app.routes';
+import { IMenuItem, MenuItem } from '../../models/menu-item';
+import { MenuItemsConfig } from '../../configs/menu-items';
 
 @Component({
     selector: 'app-menu-desktop',
@@ -7,5 +10,9 @@ import { MenuItems } from '../menu.models';
     styleUrls: ['./menu-desktop.component.scss'],
 })
 export class MenuDesktopComponent {
-    MenuItems = MenuItems;
+    MenuItems: IMenuItem[] = MenuItemsConfig.map(item => new MenuItem(item));
+
+    getCurrentRoutePath(index: number) {
+        return AppRoutes[index + 1];
+    }
 }

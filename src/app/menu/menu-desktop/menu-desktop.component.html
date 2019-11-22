@@ -1,5 +1,6 @@
 <aside
     class="aside"
+    #menu
 >
     <app-menu-button-desktop>
         <app-logo
@@ -10,14 +11,16 @@
             src="../../../assets/slogan-white.svg"
             alt="Anglo Mammy"
             class="slogan"
+            routerLink = '/home'
         >
     </app-menu-button-desktop>
     <ng-container
-        *ngFor="let menuItem of MenuItems"
+        *ngFor="let menuItem of MenuItems; index as i"
     >
         <app-menu-button-desktop
-            [icon]="menuItem.icon"
-            [text]="menuItem.text"
+            [routerLink] = "menuItem.routePath"
+            [icon]="menuItem.iconClass"
+            [text]="menuItem.name"
         ></app-menu-button-desktop>
     </ng-container>
 </aside>

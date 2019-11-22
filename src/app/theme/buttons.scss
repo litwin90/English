@@ -1,0 +1,31 @@
+@import './core-variables.scss';
+
+$border-width: px-to-rem(3px);
+$paddings: px-to-rem(8px) px-to-rem(14px);
+
+.btn {
+    @include primary-large-font;
+
+    cursor: pointer;
+    padding: $paddings;
+}
+
+.negative {
+    color: $negative;
+    background-color: $white;
+    border-width: $border-width;
+    border-style: solid;
+    border-color: $negative;
+    border-radius: px-to-rem(30px);
+
+    &:hover {
+        color: $white;
+        background-color: $negative;
+    }
+
+    &:active {
+        color: $white;
+        border-color: $negative-touch;
+        background-color: $negative-touch;
+    }
+}

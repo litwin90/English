@@ -1,4 +1,4 @@
-@import '../../theme/core-variables.scss';
+@import '../../theme/desktop.scss';
 
 .aside {
     @include change-width(.3s);
@@ -6,16 +6,17 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: px-to-rem(50px);
+    width: $menu-width-collapsed;
     height: 100vh;
     background-color: $primary;
     color: $white;
     overflow: hidden;
+    font-family: $joker-font;
 
     &:hover {
         @include change-width(.3s);
 
-        width: px-to-rem(250px);
+        width: $menu-width-expanded;
     }
 
     .slogan {

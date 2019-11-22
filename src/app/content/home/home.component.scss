@@ -1,0 +1,17 @@
+@import '../../theme/desktop.scss';
+
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: $content-base-left-margin;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
